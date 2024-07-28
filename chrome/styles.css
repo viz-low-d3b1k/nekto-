@@ -1,0 +1,95 @@
+#nektop {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  background: #101417;
+  border: 3px solid #7e0000;
+  border-radius: 10px;
+  color: rgb(236, 245, 245);
+  z-index: 9999;
+  max-width: 300px;
+  user-select: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+
+#nektop.hide {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+#nektop .drag-handle {
+  width: 100%;
+  height: 30px;
+  cursor: move;
+  background: url('https://cdn-icons-png.flaticon.com/512/10233/10233389.png') no-repeat center center;
+  background-size: contain;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+button {
+  font-family: 'Geologica', 'Overpass', sans-serif;
+  background: linear-gradient(to right, #484549, #084728);
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 2px 10px;
+  border: 3px solid #101417;
+  margin: 1%;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.interval {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  border-width: 4px;
+  border: #24015e solid 3px;
+  color: rgb(255, 255, 255);
+  background: rgb(27, 27, 27);
+}
+
+.backgroundImageUrl {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  border: #210057 solid 3px;
+  background-color: rgb(27, 27, 27);
+  color: rgb(255, 255, 255);
+}
+
+.backgroundColor {
+  background-color: #101417;
+  border: none;
+}
+
+#showMenu {
+  position: fixed;
+  z-index: 9998;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+
+#showMenu.hide {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.menu-header {
+  cursor: move;
+  pointer-events: move;
+  user-select: none;
+}
+
+.img {
+  width: 9%;
+  margin: -1%;
+  pointer-events: none;
+}

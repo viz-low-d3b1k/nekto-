@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Nekto+",
+  "version": "2.0.2",
+  "description": "Расширение Nekto+ предназначено для улучшения голосового чата nekto.me, позволяя автоматизировать переключение людей и кастомизировать интерфейс под свои предпочтения.",
+  "permissions": ["activeTab",
+    "storage",
+    "webNavigation",
+  "downloads",
+    "downloads.open"],
+  
+  "action": {
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://nekto.me/audiochat*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+    
+  ]
+  
+  
+}
