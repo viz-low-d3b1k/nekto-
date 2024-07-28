@@ -78,7 +78,7 @@ function injectMenu() {
             </label><br>
             <label for="interval">Интервал проверки (мс):</label>
             <input type="number" class="interval" id="interval" value="1000" min="1000" max="5000" step="100">
-            <br>Переключить ↑, подтвердить ← . Замутиться ↓<br>
+           <br>Переключить ↑, подтвердить ↓ . Замутиться ←.<br>
             <button id="saveInterval">Сохранить интервал</button>
             <button id="toggleStyleSettings">Настройки стилей</button>
             <div id="styleSettings" style="display:none;">
